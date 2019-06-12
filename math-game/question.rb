@@ -1,4 +1,3 @@
-require('./player')
 
 class Question
   attr_reader :number1, :number2, :string, :sum

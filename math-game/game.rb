@@ -5,10 +5,10 @@ class Game
   attr_reader :current_player
 
   def initialize
-    @player1 = Player.new
-    @player2 = Player.new
+    @player1 = Players.new
+    @player2 = Players.new
     @player1.id = 'Player 1'
-    @player2.id = 'Player 1'
+    @player2.id = 'Player 2'
     @player1.opponent = @player2
     @player2.opponent = @player1
     @current_player = @player1
