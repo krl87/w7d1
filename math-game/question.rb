@@ -17,6 +17,10 @@ class Question
   end
 
   def ask_question
+    puts @string
+  end
+
+  def get_answer
     answer = gets.chomp.to_i
     if answer == @sum
       return true
